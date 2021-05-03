@@ -50,6 +50,9 @@ attr_reader :id
   end
   
   def self.new_from_db
+    new_student = self.new(row[0], row[1], row[2])
+    new_student
+  end
 
   def update
     sql = "UPDATE students SET name = ?, grade = ? WHERE id  = ?"

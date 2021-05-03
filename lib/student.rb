@@ -45,7 +45,7 @@ attr_reader :id
   
   def self.create(name:, grade:)
     student = Student.new(name, grade)
-    students.save
+    student.save
     student
   end
 

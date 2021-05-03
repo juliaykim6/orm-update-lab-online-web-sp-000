@@ -48,6 +48,8 @@ attr_reader :id
     student.save
     student
   end
+  
+  def self.new_from_db
 
   def update
     sql = "UPDATE students SET name = ?, grade = ? WHERE id  = ?"
